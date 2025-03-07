@@ -1,0 +1,91 @@
+(ExpressProject "Amplicare_in_bucla_deschisa"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "24.1 P001 (4234998)  [9/4/2024]-[11/17/24]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\lib\modele_lib\bc846b.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\lib\modele_lib\bc856b.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\lib\modele_lib\bzx84c8v2.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\lib\modele_lib\mjd32cg.lib"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\amplicare_in_bucla_deschisa.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\amplicare_in_bucla_deschisa-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplicare_in_bucla_deschisa-pspicefiles\schematic1\psf.sim"
+        (DisplayName "SCHEMATIC1-PSF")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplicare_in_bucla_deschisa-pspicefiles\schematic1\amplificare.sim"
+        (DisplayName "SCHEMATIC1-Amplificare")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\amplicare_in_bucla_deschisa-pspicefiles\schematic1\psf.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "..\lib\modele_lib\bc846b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\lib\modele_lib\bc846b.lib"))
+      (File "..\lib\modele_lib\bc856b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\lib\modele_lib\bc856b.lib"))
+      (File "..\lib\modele_lib\bzx84c8v2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\lib\modele_lib\bzx84c8v2.lib"))
+      (File "..\lib\modele_lib\mjd32cg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\lib\modele_lib\mjd32cg.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Model Libraries"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 706"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1055 24 724")
+        (Scroll "0 118")
+        (Zoom "151")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\OCTAV\DESKTOP\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\SCHEMATICS\SERS N21\AMPLICARE_IN_BUCLA_DESCHISA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "octav"))

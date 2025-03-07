@@ -1,0 +1,260 @@
+
+**** 11/17/24 13:21:29 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TEMP"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\SERS N21
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TEMP.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bc846b.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bc856b.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bzx84c8v2.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/mjd32cg.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN TEMP -20 120 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SERS N21
+R_RL4         N463914 N463742  220 TC=0,0 
+R_R6         N463050 N462396  220 TC=0,0 
+C_C1         0 N462528  10n  TC=0,0 
+R_RDI3         N463176 N462396  22k TC=0,0 
+R_R3         N463428 N463028  4.7k TC=0,0 
+R_10         0 N463760  10k TC=0,0 
+R_RDO3         N463236 N462528  3.9k TC=0,0 
+R_RDI1         N463176 N462396  22k TC=0,0 
+R_R4         N463428 N463028  4.7k TC=0,0 
+D_D1         0 N463428 BZX84-C8V2 
+R_RSC2         N462778 N462860  0.47 TC=0,0 
+Q_Q4         N463368 N463734 N463752 QBC846B 
+Q_Q8         N463062 N462474 N462396 QBC856B 
+R_R7         0 N463752  2.7k TC=0,0 
+Q_Q9         N463062 N463502 N462396 QBC856B 
+Q_Q1         N463062 N463368 N463044 QBC856B 
+R_RSC3         N462468 N462860  0.47 TC=0,0 
+Q_Q3         N463062 N463428 N463752 QBC846B 
+Q_Q2         N463368 N463368 N463050 QBC856B 
+Q_Q6         N462528 N462664 N462896 QMJD32CT4G 
+X_R9         N463474 N463734 N463760 POT PARAMS: SET={SET} VALUE=10k
+Q_Q5         N462528 N463062 N462664 QBC856B 
+R_RL3         N463742 N463480  220 TC=0,0 
+R_REQ6         N462896 N462474  0.47 TC=0,0 
+R_R13         N462396 N463502  6.8k TC=0,0 
+R_RSC1         N462396 N462778  0.47 TC=0,0 
+R_RL1         N462926 N462528  220 TC=0,0 
+R_R11         N463896 N463890  9.1k TC=0,0 
+R_R8         N463474 N462528  5.6k TC=0,0 
+R_RDI4         N463176 N462396  22k TC=0,0 
+X_D3         N463236 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+R_REQ7         N462502 N462474  0.47 TC=0,0 
+R_RSC5         N462474 N462468  0.47 TC=0,0 
+R_RDO2         N463236 N462528  3.9k TC=0,0 
+R_RL2         N463480 N462926  220 TC=0,0 
+R_RDI2         N463176 N462396  22k TC=0,0 
+Q_Q10         N463502 N463896 0 QBC846B 
+R_R2         N463028 N462396  4.7k TC=0,0 
+R_R5         N463044 N462396  220 TC=0,0 
+R_RDO1         N463236 N462528  3.9k TC=0,0 
+Q_Q11         N462396 N463428 N463890 QBC846B 
+Q_Q7         N462528 N462664 N462502 QMJD32CT4G 
+R_RL5         0 N463914  220 TC=0,0 
+R_R1         N463028 N462396  4.7k TC=0,0 
+R_R12         0 N463896  510 TC=0,0 
+R_RSC4         N462474 N462468  0.47 TC=0,0 
+X_D2         N463176 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+V_V2         N462396 N469492  AC 0
++SIN 0 1 100 0 0 0
+V_V1         N469492 0 42
+.PARAM  set=1
+
+**** RESUMING TEMP.cir ****
+.END
+
+**** 11/17/24 13:21:29 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TEMP"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\SERS N21
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C8V2      X_D3.model201   X_D2.model201   
+          IS  110.880000E-18   56.404000E-30   56.404000E-30 
+           N     .92657         2               2            
+         ISR  146.750000E-12                                 
+         IKF  149.75                                         
+          BV    8.3329          5               5            
+         IBV    1.0062          5.000000E-06    5.000000E-06 
+          RS     .85899        30              30            
+          TT    2.770000E-06                                 
+         CJO   54.185000E-12                                 
+          VJ     .66823                                      
+           M     .33443                                      
+
+
+**** 11/17/24 13:21:29 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TEMP"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\SERS N21
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         QMJD32CT4G      
+               NPN             PNP             PNP             
+       LEVEL    1               1               1            
+          IS   18.220000E-15   20.140000E-15  363.152000E-15 
+          EG                                    1.15135      
+          BF  324.4           315.3           272.001        
+          NF     .9932           .9974           .981175     
+         VAF   82              39.15            8.02311      
+         IKF     .109            .079            .255979     
+         ISE  289.400000E-18    6.578000E-15    1.395810E-09 
+          NE    1.4             1.45            2.64418      
+          BR    8.29            8.68           26.8791       
+          NR     .9931           .9952           .990094     
+         VAR   17.9             9.5            38.8632       
+         IKR     .09             .09            2.55979      
+         ISC    9.982000E-12   16.330000E-15  254.712000E-15 
+          NC    1.763           1.15            1.09617      
+         ISS    0               0               0            
+          RB   10              10             210.108        
+         RBM    5               5.000000E-06   10.000000E-06 
+         IRB    5.000000E-06    5.000000E-06   13.167500E-06 
+          RE     .649            .663            .03296      
+          RC     .7014           .718            .164799     
+         CJE   12.440000E-12   11.350000E-12  201.825000E-12 
+         VJE     .7579           .7071           .360096     
+         MJE     .3656           .3808           .350357     
+         CJC    3.347000E-12    6.395000E-12  118.774000E-12 
+         VJC     .5463           .4951           .694849     
+         MJC     .391            .44             .382715     
+        XCJC     .6193           .6288           .778775     
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .333            .333            .5          
+          FC     .979            .9059           .9          
+          TF  490.800000E-12  654.600000E-12    3.622020E-09 
+         XTF    9.51            5.387         276.075        
+         VTF    2.927           6.245            .608188     
+         ITF     .3131           .2108          7.779510E-03 
+          TR   90.000000E-09   55.000000E-09    2.029570E-06 
+         XTB                                     .709265     
+         XTI                                    4.43052      
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.2          
+           D     .87             .52             .52         
+
+
+Starting pseudo-transient algorithm.
+
+INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N462396)   42.0000                   (N462468)   41.3530                       
+
+(N462474)   41.2460                   (N462502)   41.1380                       
+
+(N462528)   12.3280                   (N462664)   40.4240                       
+
+(N462778)   41.7840                   (N462860)   41.5690                       
+
+(N462896)   41.1380                   (N462926)    9.8623                       
+
+(N463028)   25.1160                   (N463044)   41.5330                       
+
+(N463050)   41.5280                   (N463062)   41.4850                       
+
+(N463176)    3.0194                   (N463236)    3.0220                       
+
+(N463368)   40.7870                   (N463428)    8.2325                       
+
+(N463474)    9.3885                   (N463480)    7.3968                       
+
+(N463502)   42.1880                   (N463734)    9.3885                       
+
+(N463742)    4.9312                   (N463752)    8.6388                       
+
+(N463760)    4.6942                   (N463890)    7.5246                       
+
+(N463896)     .4081                   (N463914)    2.4656                       
+
+(N469492)   42.0000                   
+
+
+  These voltages failed to converge:
+
+    V(N463914)                =   243.83mV  \     2.466V
+    V(N463742)                =   487.67mV  \     4.931V
+    V(N463050)                =     32.43V  \     41.53V
+    V(N462528)                =     1.219V  \     12.33V
+    V(N463760)                =   476.26mV  \     4.694V
+    V(N463236)                =     2.722V  \     3.022V
+    V(N462778)                =     42.00V  \     41.78V
+    V(N462860)                =     42.00V  \     41.57V
+    V(N463368)                =     31.25V  \     40.79V
+    V(N463734)                =   952.51mV  \     9.389V
+    V(N463752)                =   227.68mV  \     8.639V
+    V(N463062)                =     13.07V  \     41.49V
+    V(N462474)                =     42.00V  \     41.25V
+    V(N463502)                =     42.00V  \     42.19V
+    V(N463044)                =     29.95V  \     41.53V
+    V(N462468)                =     42.00V  \     41.35V
+    V(N462664)                =     42.04V  \     40.42V
+    V(N462896)                =     42.00V  \     41.14V
+    V(N463480)                =   731.50mV  \     7.397V
+    V(N462926)                =   975.34mV  \      9.86V
+    V(N463896)                =   399.26mV  \   408.06mV
+    V(N463474)                =   952.51mV  \     9.389V
+    V(N462502)                =     42.00V  \     41.14V
+
+  These supply currents failed to converge:
+
+    I(V_V2)                   =   -15.14mA  \  -480.94mA
+    I(V_V1)                   =   -15.14mA  \  -480.94mA
+
+  These devices failed to converge:
+    X_D3.D_LED Q_Q4      Q_Q8      Q_Q9      Q_Q1      Q_Q3      Q_Q2      
+    Q_Q6      Q_Q5      Q_Q10     Q_Q7      
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****

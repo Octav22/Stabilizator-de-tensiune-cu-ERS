@@ -1,0 +1,298 @@
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PSF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lib/bc846b.lib" 
+.LIB "../../../lib/bc856b.lib" 
+.LIB "../../../lib/bzx84c8v2.lib" 
+.LIB "../../../lib/mjd32cg.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TEMP 75
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SERS N21
+R_RL4         N463914 N463742  220 TC=0,0 
+R_R6         N463050 N462396  220 TC=0,0 
+C_C1         0 N462528  10n  TC=0,0 
+R_RDI3         N463176 N462396  22k TC=0,0 
+R_R3         N463428 N463028  4.7k TC=0,0 
+R_RDO3         N463236 N462528  3.9k TC=0,0 
+R_RDI1         N463176 N462396  22k TC=0,0 
+R_R4         N463428 N463028  4.7k TC=0,0 
+D_D1         0 N463428 BZX84-C8V2 
+R_RSC2         N462778 N462860  0.47 TC=0,0 
+Q_Q4         N463368 N463734 N463752 QBC846B 
+Q_Q8         N463062 N462474 N462396 QBC856B 
+R_R7         0 N463752  2.7k TC=0,0 
+Q_Q9         N463062 N463502 N462396 QBC856B 
+Q_Q1         N463062 N463368 N463044 QBC856B 
+R_RSC3         N462468 N462860  0.47 TC=0,0 
+Q_Q3         N463062 N463428 N463752 QBC846B 
+Q_Q2         N463368 N463368 N463050 QBC856B 
+Q_Q6         N462528 N462664 N462896 QMJD32CT4G 
+X_R9         N463474 N463734 N463760 POT PARAMS: SET={SET} VALUE=10k
+Q_Q5         N462528 N463062 N462664 QBC856B 
+R_RL3         N463742 N463480  220 TC=0,0 
+R_REQ6         N462896 N462474  0.47 TC=0,0 
+R_R13         N462396 N463502  5.6k TC=0,0 
+R_RSC1         N462396 N462778  0.47 TC=0,0 
+R_R11         N463896 N463890  9.1k TC=0,0 
+R_R8         N463474 N462528  5.6k TC=0,0 
+R_RDI4         N463176 N462396  22k TC=0,0 
+X_D3         N463236 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+R_REQ7         N462502 N462474  0.47 TC=0,0 
+R_RSC5         N462474 N462468  0.47 TC=0,0 
+R_RDO2         N463236 N462528  3.9k TC=0,0 
+R_RL2         N463480 N462926  220 TC=0,0 
+R_RDI2         N463176 N462396  22k TC=0,0 
+Q_Q10         N463502 N463896 0 QBC846B 
+R_R2         N463028 N462396  4.7k TC=0,0 
+R_R5         N463044 N462396  220 TC=0,0 
+R_RDO1         N463236 N462528  3.9k TC=0,0 
+Q_Q11         N462396 N463428 N463890 QBC846B 
+Q_Q7         N462528 N462664 N462502 QMJD32CT4G 
+R_RL5         0 N463914  220 TC=0,0 
+R_R1         N463028 N462396  4.7k TC=0,0 
+R_R12         0 N463896  510 TC=0,0 
+R_RSC4         N462474 N462468  0.47 TC=0,0 
+X_D2         N463176 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+V_V1         N462396 0 42
+R_R10         0 N463760  10k TC=0,0 
+R_RL6         N462926 N462528  220 TC=0,0 
+.PARAM  set=0
+
+**** RESUMING PSF.cir ****
+.END
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C8V2      X_D3.model201   X_D2.model201   
+          IS  110.880000E-18   56.404000E-30   56.404000E-30 
+           N     .92657         2               2            
+         ISR  146.750000E-12                                 
+         IKF  149.75                                         
+          BV    8.3329          5               5            
+         IBV    1.0062          5.000000E-06    5.000000E-06 
+          RS     .85899        30              30            
+          TT    2.770000E-06                                 
+         CJO   54.185000E-12                                 
+          VJ     .66823                                      
+           M     .33443                                      
+
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         QMJD32CT4G      
+               NPN             PNP             PNP             
+       LEVEL    1               1               1            
+          IS   18.220000E-15   20.140000E-15  363.152000E-15 
+          EG                                    1.15135      
+          BF  324.4           315.3           272.001        
+          NF     .9932           .9974           .981175     
+         VAF   82              39.15            8.02311      
+         IKF     .109            .079            .255979     
+         ISE  289.400000E-18    6.578000E-15    1.395810E-09 
+          NE    1.4             1.45            2.64418      
+          BR    8.29            8.68           26.8791       
+          NR     .9931           .9952           .990094     
+         VAR   17.9             9.5            38.8632       
+         IKR     .09             .09            2.55979      
+         ISC    9.982000E-12   16.330000E-15  254.712000E-15 
+          NC    1.763           1.15            1.09617      
+         ISS    0               0               0            
+          RB   10              10             210.108        
+         RBM    5               5.000000E-06   10.000000E-06 
+         IRB    5.000000E-06    5.000000E-06   13.167500E-06 
+          RE     .649            .663            .03296      
+          RC     .7014           .718            .164799     
+         CJE   12.440000E-12   11.350000E-12  201.825000E-12 
+         VJE     .7579           .7071           .360096     
+         MJE     .3656           .3808           .350357     
+         CJC    3.347000E-12    6.395000E-12  118.774000E-12 
+         VJC     .5463           .4951           .694849     
+         MJC     .391            .44             .382715     
+        XCJC     .6193           .6288           .778775     
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .333            .333            .5          
+          FC     .979            .9059           .9          
+          TF  490.800000E-12  654.600000E-12    3.622020E-09 
+         XTF    9.51            5.387         276.075        
+         VTF    2.927           6.245            .608188     
+         ITF     .3131           .2108          7.779510E-03 
+          TR   90.000000E-09   55.000000E-09    2.029570E-06 
+         XTB                                     .709265     
+         XTI                                    4.43052      
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.2          
+           D     .87             .52             .52         
+
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   75.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 BZX84-C8V2    X_D3.model201  X_D2.model201 
+
+         IS        1.064E-13      1.358E-27      1.358E-27  
+         VJ        5.699E-01      9.547E-01      9.547E-01  
+        CJO        5.720E-11      0.000E+00      0.000E+00  
+         RS        8.590E-01      3.000E+01      3.000E+01  
+        IKF        1.498E+02      0.000E+00      0.000E+00  
+         BV        8.333E+00      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B      QMJD32CT4G   
+
+         BF        3.244E+02      3.153E+02      3.022E+02  
+        ISE        2.723E-14      5.292E-13      1.641E-08  
+        VJE        6.739E-01      6.150E-01      2.125E-01  
+        CJE        1.303E-11      1.200E-11      2.322E-10  
+         RE        6.490E-01      6.630E-01      3.296E-02  
+         RB        1.000E+01      1.000E+01      2.101E+02  
+         BR        8.290E+00      8.680E+00      2.986E+01  
+        ISC        3.685E-10      4.127E-12      1.128E-10  
+        VJC        4.285E-01      3.691E-01      6.008E-01  
+        CJC        3.654E-12      7.165E-12      1.258E-10  
+         RC        7.014E-01      7.180E-01      1.648E-01  
+        RBM        5.000E+00      5.000E-06      1.000E-05  
+         IS        1.056E-11      1.167E-11      3.243E-10  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        6.647E-01      6.647E-01      6.647E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   75.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N462396)   42.0000                   (N462468)   41.9530                       
+
+(N462474)   41.9450                   (N462502)   41.9380                       
+
+(N462528)   21.0190                   (N462664)   41.4490                       
+
+(N462778)   41.9840                   (N462860)   41.9690                       
+
+(N462896)   41.9380                   (N462926)   16.8150                       
+
+(N463028)   25.0950                   (N463044)   41.6890                       
+
+(N463050)   41.6890                   (N463062)   41.0060                       
+
+(N463176)    3.6233                   (N463236)    3.8485                       
+
+(N463368)   41.1290                   (N463428)    8.1908                       
+
+(N463474)   16.4140                   (N463480)   12.6120                       
+
+(N463502)   41.9260                   (N463734)    8.1910                       
+
+(N463742)    8.4077                   (N463752)    7.6415                       
+
+(N463760)    8.1910                   (N463890)    7.6594                       
+
+(N463896)     .4065                   (N463914)    4.2039                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.094E-02
+
+    TOTAL POWER DISSIPATION   2.14E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/03/24 21:49:19 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

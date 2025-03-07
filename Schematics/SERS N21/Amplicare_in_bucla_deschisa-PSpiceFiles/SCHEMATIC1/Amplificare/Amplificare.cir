@@ -1,0 +1,23 @@
+** Profile: "SCHEMATIC1-Amplificare"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\Amplicare_in_bucla_deschisa-PSpiceFiles\SCHEMATIC1\Amplificare.sim ] 
+
+** Creating circuit file "Amplificare.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bc846b.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bc856b.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/bzx84c8v2.lib" 
+.LIB "C:/Users/octav/Desktop/P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD/Schematics/lib/modele_lib/mjd32cg.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 7.8 9 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

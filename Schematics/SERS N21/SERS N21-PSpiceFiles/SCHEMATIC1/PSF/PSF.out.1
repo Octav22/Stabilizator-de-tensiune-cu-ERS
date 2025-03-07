@@ -1,0 +1,110 @@
+
+**** 11/17/24 15:29:12 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\sers n21-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PSF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TEMP 25
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SERS N21
+R_RL4         N463914 N463742  220 TC=0,0 
+R_R6         N463050 N462396  220 TC=0,0 
+C_C1         0 N462528  10n  TC=0,0 
+R_RDI3         N463176 N462396  22k TC=0,0 
+R_R3         N463428 N463028  4.7k TC=0,0 
+R_RDO3         N463236 N462528  3.9k TC=0,0 
+R_RDI1         N463176 N462396  22k TC=0,0 
+R_R4         N463428 N463028  4.7k TC=0,0 
+D_D1         0 N463428 BZX84-C8V2 
+R_RSC2         N462778 N462860  0.47 TC=0,0 
+Q_Q4         N463368 N463734 N463752 QBC846B 
+Q_Q8         N463062 N462474 N462396 QBC856B 
+R_R7         0 N463752  2.7k TC=0,0 
+Q_Q9         N463062 N463502 N462396 QBC856B 
+Q_Q1         N463062 N463368 N463044 QBC856B 
+R_RSC3         N462468 N462860  0.47 TC=0,0 
+Q_Q3         N463062 N463428 N463752 QBC846B 
+Q_Q2         N463368 N463368 N463050 QBC856B 
+Q_Q6         N462528 N462664 N462896 QMJD32CT4G 
+X_R9         N463474 N463734 N463760 POT PARAMS: SET={SET} VALUE=10k
+Q_Q5         N462528 N463062 N462664 QBC856B 
+R_RL3         N463742 N463480  220 TC=0,0 
+R_REQ6         N462896 N462474  0.47 TC=0,0 
+R_R13         N462396 N463502  6.8k TC=0,0 
+R_RSC1         N462396 N462778  0.47 TC=0,0 
+R_R11         N463896 N463890  9.1k TC=0,0 
+R_R8         N463474 N462528  5.6k TC=0,0 
+R_RDI4         N463176 N462396  22k TC=0,0 
+X_D3         N463236 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+R_REQ7         N462502 N462474  0.47 TC=0,0 
+R_RSC5         N462474 N462468  0.47 TC=0,0 
+R_RDO2         N463236 N462528  3.9k TC=0,0 
+R_RL2         N463480 N462926  220 TC=0,0 
+R_RDI2         N463176 N462396  22k TC=0,0 
+Q_Q10         N463502 N463896 0 QBC846B 
+R_R2         N463028 N462396  4.7k TC=0,0 
+R_R5         N463044 N462396  220 TC=0,0 
+R_RDO1         N463236 N462528  3.9k TC=0,0 
+Q_Q11         N462396 N463428 N463890 QBC846B 
+Q_Q7         N462528 N462664 N462502 QMJD32CT4G 
+R_RL5         0 N463914  220 TC=0,0 
+R_R1         N463028 N462396  4.7k TC=0,0 
+R_R12         0 N463896  510 TC=0,0 
+R_RSC4         N462474 N462468  0.47 TC=0,0 
+X_D2         N463176 0 LED PARAMS: IS=5.6404e-029 RS=30  BV=5 IBV=5e-6         
+V_V1         N462396 0 42
+R_R10         0 N463760  10k TC=0,0 
+R_RL6         N462926 N462528  220 TC=0,0 
+.PARAM  set=0
+
+**** RESUMING PSF.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model BZX84-C8V2 used by D_D1 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q4 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q8 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q9 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q1 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q3 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q2 is undefined
+
+ERROR(ORPSIM-15113): Model QMJD32CT4G used by Q_Q6 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q5 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q10 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q11 is undefined
+
+ERROR(ORPSIM-15113): Model QMJD32CT4G used by Q_Q7 is undefined
+

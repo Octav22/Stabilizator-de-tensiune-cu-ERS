@@ -1,0 +1,61 @@
+
+**** 11/17/24 13:29:07 *** PSpice 24.1.0 (4 September 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\octav\Desktop\P1_2024_432E_TUFAN_OCTAVIAN_IOAN_SERS_N21_ORCAD\Schematics\SERS N21\Amplicare
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PSF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLICARE_IN_BUCLA_DESCHISA
+Q_Q1         N306188 N306110 N306008 QBC856B 
+D_D2         0 N306214 BZX84-C8V2 
+Q_Q4         N306110 N306308 N306320 QBC846B 
+Q_Q3         N306188 N306214 N306320 QBC846B 
+R_R3         N306214 N306020  4.7k TC=0,0 
+R_R7         0 N306320  2.7k TC=0,0 
+R_R1         N306020 N305870  4.7k TC=0,0 
+V_V2         N306308 0  AC 0
++SIN 8.2 1 100 0 0 0
+R_R5         N306008 N305870  220 TC=0,0 
+R_R6         N306014 N305870  220 TC=0,0 
+R_R2         N306020 N305870  4.7k TC=0,0 
+V_V1         N305870 0 42
+R_R4         N306214 N306020  4.7k TC=0,0 
+Q_Q2         N306110 N306110 N306014 QBC856B 
+
+**** RESUMING PSF.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model BZX84-C8V2 used by D_D2 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q1 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q4 is undefined
+
+ERROR(ORPSIM-15113): Model QBC846B used by Q_Q3 is undefined
+
+ERROR(ORPSIM-15113): Model QBC856B used by Q_Q2 is undefined
+
